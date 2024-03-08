@@ -21,14 +21,18 @@ All Python scripts, including the FastAPI server (`main.py`), are located within
 ### Virtual Environment Creation:
 
 To create a virtual environment named `venv`, run the following command:
-python3 -m venv venv
+- python3 -m venv venv
+- cd path/to/project/myenv
+- source bin/activate
+
+
 
 
 ### Python Path Setup:
 
 To ensure that Python can find modules and packages in your project directory, you can add the project's directory to the Python path. Run the following command:
 
-- please use the absolute path of your environment below is a structure in my local env in macOS
+- please use the **absolute path of your environment** below is a structure in my local env in macOS
 
 - **macOS / Linux:**
 
@@ -44,6 +48,18 @@ This command adds the `backend` directory to the Python path, allowing Python to
 - **SAMPLE OUTPUT of path check:**
 (venv) AKs:ttm user$ echo $PYTHONPATH
 /Volumes/user/TTM_Project/ttm/backend:
+
+
+### IMPORTANT PATH CHANGES TO DATA STORE
+- ./backend/config/ holds config.ini and constants.py to handle generic data retrieval
+- Current path is set to my local repo as shown below please change as per your pwd or present working directory.
+- WorkingCapitalData = /Volumes/arun/TTM_Project/ttm/backend/data_store/working_capital.csv
+- PNLData = /Volumes/arun/TTM_Project/ttm/backend/data_store/pnl.csv
+- Change above to point to your data store path
+- Under constants.py please make similar change to point a the correct config.ini location as shown below
+- _config_file = "/Volumes/arun/TTM_Project/ttm/backend/config/config.ini"
+
+
 
 ## FastAPI Server and Test Automation
 
