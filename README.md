@@ -36,18 +36,18 @@ To ensure that Python can find modules and packages in your project directory, y
 
 - **macOS / Linux:**
 
-export PYTHONPATH="/Volumes/user/TTM_Project/ttm/backend:$PYTHONPATH"
+export PYTHONPATH="/Volumes/user/TTM_Project/ttm/:$PYTHONPATH"
 
 
 - **Windows:**
 
-set PYTHONPATH="/Volumes/user/TTM_Project/ttm/backend;%PYTHONPATH%"
+set PYTHONPATH="/Volumes/user/TTM_Project/ttm/;%PYTHONPATH%"
 
 This command adds the `backend` directory to the Python path, allowing Python to locate modules and packages within that directory.
 
 - **SAMPLE OUTPUT of path check:**
 (venv) AKs:ttm user$ echo $PYTHONPATH
-/Volumes/user/TTM_Project/ttm/backend:
+/Volumes/user/TTM_Project/ttm/:
 
 
 ### IMPORTANT PATH CHANGES TO DATA STORE
