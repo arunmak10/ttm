@@ -14,10 +14,13 @@ def stop_server(server_process):
 def run_tests_and_generate_coverage():
     # Run pytest with coverage and generate HTML report
     subprocess.run(['pytest', '--cov=./backend/', './tests/backend/', '--capture=tee-sys'])
+    subprocess.run(['coverage', 'html'])
 
 def open_coverage_report_in_browser():
     # Open the HTML coverage report in the default web browser
-    webbrowser.open_new_tab('./htmlcov/index.html')
+    #webbrowser.open_new_tab('./htmlcov/index.html')
+    subprocess.run(['open', './htmlcov/index.html'])
+    
 
 if __name__ == "__main__":
     
