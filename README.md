@@ -53,11 +53,11 @@ This command adds the `backend` directory to the Python path, allowing Python to
 ### IMPORTANT PATH CHANGES TO DATA STORE
 - ./backend/config/ holds config.ini and constants.py to handle generic data retrieval
 - Current path is set to my local repo as shown below please change as per your pwd or present working directory.
-- WorkingCapitalData = /Volumes/arun/TTM_Project/ttm/backend/data_store/working_capital.csv
-- PNLData = /Volumes/arun/TTM_Project/ttm/backend/data_store/pnl.csv
+- WorkingCapitalData = **/Volumes/arun/TTM_Project/ttm**/backend/data_store/working_capital.csv
+- PNLData = **/Volumes/arun/TTM_Project/ttm/**/backend/data_store/pnl.csv
 - Change above to point to your data store path
 - Under constants.py please make similar change to point a the correct config.ini location as shown below
-- _config_file = "/Volumes/arun/TTM_Project/ttm/backend/config/config.ini"
+- _config_file = "**/Volumes/arun/TTM_Project/ttm/**/backend/config/config.ini"
 
 
 
