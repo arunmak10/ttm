@@ -1,0 +1,21 @@
+# Ignore virtual environments
+venv/
+env/
+virtualenv/
+
+# Ignore cache and compiled files
+.cache/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore dependencies
+node_modules/
+lib/
+lib64/
+
+# Ignore editor or IDE files
+.vscode/
+.idea/
+.vs/
